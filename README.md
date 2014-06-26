@@ -45,3 +45,61 @@ Primer Ejercicio de 24
         } return Primer_Ejercicio();
         ?>
         
+        
+        
+        
+        
+        
+   
+  Segundo Ejercicio de 24      
+<!--Segundo Ejercicio de 24-->
+
+            <!--Arias Mero Alberto Fernando
+                Tercer Nivel "A"-->
+            
+ <title>Segundo Ejercicio</title>
+ <h1 >Segundo Ejercicio</h1>
+        <?php
+       ini_set('display_errors', 'off');
+       ini_set('display_startup_errors', 'off');
+       error_reporting(0);
+       
+       function segundo_ejercicio()
+       {
+           
+       $valorx= $_POST['ingresox'];
+       $valory= $_POST['ingresoy'];
+       
+       if ($_POST['enviar']) 
+        {
+            $valores_en_x = [2, 2, 4, 12, 48];
+            $valores_en_y = [3, 3, 6, 18, 72];
+            if ($valorx==0 or $valory==0 or $valorx<0 or $valory<0 or $valorx>255 or  $valory>255){
+                echo ''-1;
+                return FALSE;
+               }
+                if ($valorx==2) {
+                  $mostrar = $valores_en_x[$valory];
+                  echo 'El valor es : '.$mostrar;
+               }
+             else  if ($valorx==3) {
+                  $mostrar = $valores_en_y[$valory];
+                  echo 'El valor es : '.$mostrar;
+                   
+               }
+        }else
+           {
+        ?>
+        <form method="post" action="Segundo_ejercicio.php">
+            <div>Ingresa X :<input type="text" name="ingresox" maxlength="3"></div>
+            <div>Ingresa Y :<input type="text" name="ingresoy" maxlength="3"></div>
+            <input type="submit" name="enviar" value="Verificar ">
+         </form>
+ 
+        <?php 
+          }
+        
+       } return segundo_ejercicio();
+        ?>
+
+   
