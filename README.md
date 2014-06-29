@@ -103,3 +103,51 @@ Primer Ejercicio de 24
         ?>
 
    
+   
+   
+   
+   
+   
+<!--Tercer Ejercicio de 24-->
+
+            <!--Arias Mero Alberto Fernando
+                Tercer Nivel "A"-->
+            
+ <title>Tercer Ejercicio</title>
+ <h1 >Tercer Ejercicio</h1>
+        
+     <?php
+     ini_set('display_errors', 'off');
+     ini_set('display_startup_errors', 'off');
+     error_reporting(0); 
+     
+     function Tercer_ejercicio(){
+          $valorx= $_POST['ingresox'];
+          $valory= $_POST['ingresoy'];
+          
+     if ($_POST['enviar']) 
+     {
+        $valores = ["",60, 30, 20, 15, 12];
+        
+        if ($valorx==0 or $valory==0 or $valorx<0 or $valory<0 or $valorx>255 or $valory>255) {
+            echo ''-1;
+        }
+        else if ($valorx== $valores[1]) {
+            $resultado = $valores[$valory];
+             echo ''.$resultado;
+        }
+        
+         
+     }else
+         {
+     ?>
+        <form method="post" action="Tercer_ejercicio.php">
+            <div>Ingresa X :<input type="text" name="ingresox" maxlength="3"></div>
+            <div>Ingresa Y :<input type="text" name="ingresoy" maxlength="3"></div>
+            <input type="submit" name="enviar" value="Verificar ">
+         </form>
+ 
+    <?php
+         }
+     }     return Tercer_ejercicio();
+    ?>
