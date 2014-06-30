@@ -151,3 +151,62 @@ Primer Ejercicio de 24
          }
      }     return Tercer_ejercicio();
     ?>
+
+
+
+
+
+
+
+
+
+
+<!--Noveno Ejercicio de 24-->
+
+            <!--Arias Mero Alberto Fernando
+                Tercer Nivel "A"-->
+            
+ <title>Noveno Ejercicio</title>
+ <h1 >Noveno Ejercicio</h1>
+ 
+ 
+  <?php
+     ini_set('display_errors', 'off');
+     ini_set('display_startup_errors', 'off');
+     error_reporting(0); 
+     
+       function Noveno_ejercicio(){
+         
+         $valor= $_POST['valor'];
+                 
+     if ($_POST['enviar']) {
+       
+         
+         for ($recoree = 1; $recoree <= $valor; $recoree++) 
+         {
+             $potencia = $recoree * $recoree;
+             
+             while ($valor == $potencia) 
+                 { $Bandera= 1;  echo  "TRUE";   return TRUE;}                  
+         }  echo 'FALSE';
+         
+          if ($Bandera > 0) 
+              { echo 'FALSE'; }
+        
+         
+     }else
+         {
+        ?>
+        <form method="post" action="Noveno_ejercicio.php">
+            Ingrese Numero Positivo :<div><input type="text" name="valor" ></div>
+            <input type="submit" name="enviar" value="Verificar ">
+         </form>
+ 
+     <?php 
+     
+        }
+     }return Noveno_ejercicio();
+     
+     ?>
+
+  
