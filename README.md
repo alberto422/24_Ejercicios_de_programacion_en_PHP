@@ -158,6 +158,49 @@ Primer Ejercicio de 24
 
 
 
+<!--Sexto Ejercicio de 24-->
+
+            <!--Arias Mero Alberto Fernando
+                Tercer Nivel "A"-->
+            
+            <title>Sexto Ejercicio</title>
+            <h1 >Sexto Ejercicio</h1>
+
+     <?php
+     ini_set('display_errors', 'off');
+     ini_set('display_startup_errors', 'off');
+     error_reporting(0); 
+     
+       function Sexto_ejercicio()
+     {
+         
+         $frase= $_POST['frase'];
+                 
+     if ($_POST['enviar']) 
+     {
+         foreach(array_reverse(explode(" ", $frase)) as $frase)
+         {
+             echo $frase." ";
+         }
+      
+     }else
+         {
+        ?>
+        <form method="post" action="Sexto_ejercicio.php">
+            Ingrese Una Frase :<div><input type="text" name="frase" ></div>
+            <input type="submit" name="enviar" value="Verificar ">
+         </form>
+ 
+     <?php 
+     
+        }
+     }return Sexto_ejercicio();
+     
+     ?>
+
+
+
+
 <!--Noveno Ejercicio de 24-->
 
             <!--Arias Mero Alberto Fernando
