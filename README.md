@@ -157,16 +157,15 @@ Primer Ejercicio de 24
 
 
 
-
 <!--Sexto Ejercicio de 24-->
 
             <!--Arias Mero Alberto Fernando
                 Tercer Nivel "A"-->
             
-            <title>Sexto Ejercicio</title>
-            <h1 >Sexto Ejercicio</h1>
+   <title>Sexto Ejercicio</title>
+   <h1 >Sexto Ejercicio</h1>
 
-     <?php
+   <?php
      ini_set('display_errors', 'off');
      ini_set('display_startup_errors', 'off');
      error_reporting(0); 
@@ -197,6 +196,7 @@ Primer Ejercicio de 24
      }return Sexto_ejercicio();
      
      ?>
+
 
 
 
