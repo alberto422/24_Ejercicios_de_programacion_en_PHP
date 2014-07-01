@@ -162,8 +162,8 @@ Primer Ejercicio de 24
             <!--Arias Mero Alberto Fernando
                 Tercer Nivel "A"-->
         
- <title>Tercer Ejercicio</title>
- <h1 >Tercer Ejercicio</h1>
+ <title>Cuarto Ejercicio</title>
+ <h1 >Cuarto Ejercicio</h1>
  
    <?php
      ini_set('display_errors', 'off');
@@ -188,17 +188,11 @@ for ($i = 0; $i < strlen($cadena1.$cadena2); $i++)
     {
     while ($cadena1[$i] != $cadena2[$i]) 
         {
-        
         $valor= $cadena1[$i];
-       
-              print  ($valor) ;              return TRUE;                   
-         
-    
+        print  ($valor) ;  return TRUE;                       
         }
     }
-  }
-    
-         
+  }  
      }else
          {
         ?>
@@ -209,11 +203,12 @@ for ($i = 0; $i < strlen($cadena1.$cadena2); $i++)
          </form>
  
      <?php 
-     
         }
      }return Cuarto_ejercicio();
      
      ?>
+
+  
 
   
 
