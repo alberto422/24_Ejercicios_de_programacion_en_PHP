@@ -180,19 +180,18 @@ Primer Ejercicio de 24
          
      if ($_POST['enviar']) {
         
-         if(strcmp($cadena1,$cadena2) == 0)
-{
-echo "El string ".$cadena1." y string ".$cadena2." Son iguales";
-}else
-  {
-echo "El string ".$cadena1." y string ".$cadena2." no Son iguales <br />";
+         if(strcmp($cadena1,$cadena2) == 0) {
+          echo "El string ".$cadena1." y string ".$cadena2." Son iguales";
+          }else
+          {
+          echo "El string ".$cadena1." y string ".$cadena2." no Son iguales <br />";
 
-for ($i = 0; $i < strlen($cadena1.$cadena2); $i++) 
-    {
-    while ($cadena1[$i] != $cadena2[$i]) 
-        {
-        $valor= $cadena1[$i];
-        print  ($valor) ;  return TRUE;                       
+           for ($i = 0; $i < strlen($cadena1.$cadena2); $i++) 
+           {
+             while ($cadena1[$i] != $cadena2[$i]) 
+           {
+             $valor= $cadena1[$i];
+              print  ($valor) ;  return TRUE;                       
         }
     }
   }  
