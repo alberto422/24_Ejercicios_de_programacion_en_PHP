@@ -194,7 +194,8 @@ Primer Ejercicio de 24
               print  ($valor) ;  return TRUE;                       
         }
     }
-  }  }else {
+          }  
+   } else {
         ?>
          <form method="post" action="Cuarto_ejercicio.php">
             Ingresa Primer Texto :<div><input type="text" name="S1" maxlength="60"></div>
