@@ -258,6 +258,62 @@ for ($i = 0; $i < strlen($cadena1.$cadena2); $i++)
 
 
 
+
+
+<!--Octavo Ejercicio de 24-->
+
+            <!--Arias Mero Alberto Fernando
+                Tercer Nivel "A"-->
+            
+ <title>Octavo Ejercicio</title>
+ <h1 >Octavo Ejercicio</h1>
+  
+  <?php
+  
+     ini_set('display_errors', 'off');
+     ini_set('display_startup_errors', 'off');
+     error_reporting(0); 
+     
+       function Octavo_ejercicio(){
+         
+         $cadena= $_POST['cadena'];
+                 
+     if ($_POST['enviar']) {
+              $incremento=0;   
+         for ($x = 0; $x < strlen($cadena); $x++) {
+             
+             if ($cadena[$x] == 'a' || $cadena[$x] == 'A'){
+                 $incremento++;
+                  
+                 }
+                
+             } if ($incremento>1) {
+                 
+                echo "La letra 'a-A' se repite : ".$incremento;    
+         }
+        
+         
+     }else
+         {
+        ?>
+        <form method="post" action="Octavo_ejercicio.php">
+            Ingrese Cadena :<div><input type="text" name="cadena" ></div>
+            <input type="submit" name="enviar" value="Verificar ">
+         </form>
+ 
+     <?php 
+     
+        }
+     }return Octavo_ejercicio();
+     
+     ?>
+
+  
+  
+  
+  
+  
+
 <!--Noveno Ejercicio de 24-->
 
             <!--Arias Mero Alberto Fernando
