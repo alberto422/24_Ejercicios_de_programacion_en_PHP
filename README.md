@@ -157,6 +157,7 @@ Primer Ejercicio de 24
 
 
 
+
 <!--Cuarto Ejercicio de 24-->
 
             <!--Arias Mero Alberto Fernando
@@ -167,7 +168,7 @@ Primer Ejercicio de 24
  
  
  
-   <?php
+     <?php
      ini_set('display_errors', 'off');
      ini_set('display_startup_errors', 'off');
      error_reporting(0); 
