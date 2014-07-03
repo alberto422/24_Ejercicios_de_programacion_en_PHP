@@ -369,3 +369,55 @@ for ($i = 0; $i < strlen($cadena1.$cadena2); $i++)
 
 
 
+
+
+<!--Ejercicio # 10 de 24-->
+
+            <!--Arias Mero Alberto Fernando
+                Tercer Nivel "A"-->
+<title> Ejercicio 10</title>
+ <h1 > Ejercicio 10</h1>
+  
+     <?php
+     ini_set('display_errors', 'off');
+     ini_set('display_startup_errors', 'off');
+     error_reporting(0); 
+     
+       function Decimo_ejercicio(){
+         
+         $valorx= $_POST['valorx'];
+         $valory= $_POST['valory'];
+                 
+     if ($_POST['enviar']) {
+       
+         if ($valorx >= $valory || $valory <7) 
+             {  echo ""-1; } 
+         else{
+             for ($i = 1; $i<$valory; $i++) 
+               {
+                 $suma = 0;   
+                  for ($j = 1; $j <$i; $j++) 
+                  {
+                       if ($i % $j ==0) 
+                          {
+                          $suma= $suma + $j;
+                          }
+                     
+                  } 
+                      if ($i == $suma) 
+                         {  echo " ".$i." ";  }                 
+               }
+            }
+     }else
+         {
+        ?>
+         <form method="post" action="Decimo_ejercicio.php">
+            Ingrese X  :<input type="text" name="valorx" ><br />
+            Ingrese Y  :<input type="text" name="valory" ><br />
+            <input type="submit" name="enviar" value="Verificar ">
+         </form>
+ 
+        <?php 
+        }
+     }return Decimo_ejercicio();
+     ?>
