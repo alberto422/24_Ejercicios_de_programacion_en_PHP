@@ -272,8 +272,9 @@ for ($i = 0; $i < strlen($cadena1.$cadena2); $i++)
  <h1 >Octavo Ejercicio</h1>
   
   
-  <?php
-  
+     
+     
+     <?php
      ini_set('display_errors', 'off');
      ini_set('display_startup_errors', 'off');
      error_reporting(0); 
