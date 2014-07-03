@@ -165,6 +165,8 @@ Primer Ejercicio de 24
  <title>Cuarto Ejercicio</title>
  <h1 >Cuarto Ejercicio</h1>
  
+ 
+ 
    <?php
      ini_set('display_errors', 'off');
      ini_set('display_startup_errors', 'off');
