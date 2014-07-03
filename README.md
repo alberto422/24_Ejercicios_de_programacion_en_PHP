@@ -196,16 +196,16 @@ Primer Ejercicio de 24
     }
   }  
      }else
-         {
+          {
         ?>
-        <form method="post" action="Cuarto_ejercicio.php">
+         <form method="post" action="Cuarto_ejercicio.php">
             Ingresa Primer Texto :<div><input type="text" name="S1" maxlength="60"></div>
             Ingresa Segundo Texto :<div><input type="text" name="S2" maxlength="60"></div>
             <input type="submit" name="enviar" value="Verificar ">
          </form>
  
      <?php 
-        }
+         }
      }return Cuarto_ejercicio();
      
      ?>
