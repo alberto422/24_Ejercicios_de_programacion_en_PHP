@@ -157,7 +157,6 @@ Primer Ejercicio de 24
 
 
 
-
 <!--Cuarto Ejercicio de 24-->
 
             <!--Arias Mero Alberto Fernando
@@ -166,9 +165,7 @@ Primer Ejercicio de 24
  <title>Cuarto Ejercicio</title>
  <h1 >Cuarto Ejercicio</h1>
  
- 
- 
-     <?php
+   <?php
      ini_set('display_errors', 'off');
      ini_set('display_startup_errors', 'off');
      error_reporting(0); 
@@ -179,41 +176,36 @@ Primer Ejercicio de 24
          $cadena2= $_POST['S2'];
          
      if ($_POST['enviar']) {
-        
-         if(strcmp($cadena1,$cadena2) == 0) {
-          echo "El string ".$cadena1." y string ".$cadena2." Son iguales";
-          }else
-          {
-          echo "El string ".$cadena1." y string ".$cadena2." no Son iguales <br />";
-
-           for ($i = 0; $i < strlen($cadena1.$cadena2); $i++) 
-           {
-             while ($cadena1[$i] != $cadena2[$i]) 
-           {
-             $valor= $cadena1[$i];
-              print  ($valor) ;  return TRUE;                       
-       
-        }
-    
-    }
-  
-  }  
-   
-   } else 
-        {
-      ?>
-         <form method="post" action="Cuarto_ejercicio.php">
+     
+         if(strcmp($cadena1,$cadena2) == 0){
+            echo "El string ".$cadena1." y string ".$cadena2." Son iguales";
+                
+         }else
+              {
+               echo "El string ".$cadena1." y string ".$cadena2." no Son iguales <br />";
+               for ($i = 0; $i < strlen($cadena1.$cadena2); $i++)  {
+               
+                   while ($cadena1[$i] != $cadena2[$i]) {
+                     $valor= $cadena1[$i];
+                     print  ($valor) ;  return TRUE;                       
+                    }
+                   }
+               }  
+     }else
+         {
+        ?>
+        <form method="post" action="Cuarto_ejercicio.php">
             Ingresa Primer Texto :<div><input type="text" name="S1" maxlength="60"></div>
             Ingresa Segundo Texto :<div><input type="text" name="S2" maxlength="60"></div>
             <input type="submit" name="enviar" value="Verificar ">
          </form>
  
      <?php 
-         }
+        }
      }return Cuarto_ejercicio();
-     
      ?>
 
+  
   
 
   
