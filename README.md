@@ -221,6 +221,7 @@ for ($i = 0; $i < strlen($cadena1.$cadena2); $i++)
    <title>Sexto Ejercicio</title>
    <h1 >Sexto Ejercicio</h1>
 
+
    <?php
 
      ini_set('display_errors', 'off');
@@ -267,6 +268,7 @@ for ($i = 0; $i < strlen($cadena1.$cadena2); $i++)
             
  <title>Octavo Ejercicio</title>
  <h1 >Octavo Ejercicio</h1>
+  
   
   <?php
   
